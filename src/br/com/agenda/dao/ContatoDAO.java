@@ -23,7 +23,7 @@ public class ContatoDAO {
 			pstm.setInt(2, contato.getIdade());
 			pstm.setDate(3, new Date(contato.getDataCadastro().getTime()));
 			
-			pstm.executeQuery();
+			pstm.execute();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
